@@ -1,0 +1,411 @@
+/*
+Colours
+1. Cadmium Green
+- #097969 rgb(9,121,105)
+2. Pastel Green
+- #C1E1C1 rgb(193,225,193)
+3. Black
+- #000000 rgb(0,0,0)
+4. White
+- #ffffff 
+*/
+/* Landing Page */
+body, html {
+    margin: 0;
+    padding: 0;
+}  
+
+#home-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/index/fabric.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.title-box {
+    width: 90%;
+    color: rgb(31,160,96);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%,-50%);
+    text-align: center;
+}
+
+.title-box h1{
+    font-size: 100px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.title-box p{
+    color: rgb(24, 23, 23);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 6%;
+    padding-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(4, 9, 30, 0.26);
+}
+
+nav img {
+    width: 70px;
+}
+
+.nav-links {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+#exception ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+/* Product features */
+.title {
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.prod-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 10%);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.levels {
+    order: 1;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recruitment {
+    order: 2;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.recruitment p {
+    font-size: 20px;
+}
+
+.zero {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    gap: 15px;
+}
+
+.zero img {
+    width: 40%;
+    order: -1;
+    border-radius: 25px;
+}
+.one {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    gap: 15px;
+}
+
+.one img {
+    width: 40%;
+    order: 2;
+    border-radius: 25px;
+}
+
+.two {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    gap: 15px;
+    
+}
+
+.two img {
+    width: 40%;
+    order: -1;
+    border-radius: 25px;
+}
+
+.text-box {
+    background-color: #C1E1C1;
+    width: 40%;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+.text-box h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.text-box p {
+    font-size: 20px;
+}
+
+/* About */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(4, 9, 30,0.7),rgb(255, 255, 255)),url(images/About_Us/business-group-team-hands.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.Origin{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.Origin{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.Origin img{
+    width: 50%;
+}
+.Origin h1{
+    padding-top: 0;
+}
+
+.Origin p{
+    padding: 15px 0 25px;
+}
+
+.Why{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.Why{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.Why img{
+    width: 50%;
+}
+
+/*My Team */
+
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+
+/* Contact Us Pag */
+
+.location {
+    width: 80%;
+    margin:auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact_us{
+    width: 80%;
+    margin:auto;
+
+
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display:flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+
+
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border:1px solid #ccc;
+    box-sizing:border-box 
+
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+/* ?????? */
+.header{
+    overflow: hidden;
+    background-color:rgb(9,121,105);
+    padding: 10px 10px;
+}
+
+.header a.logo{
+    text-decoration: none;  
+    font-size: 25px;
+    color: rgb(228, 228, 228);
+}
+
+
+.header a.about{
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+    padding: 0px 15px;
+    color: rgb(228, 228, 228);
+} 
+.header a:hover{
+   
+    color: rgb(255, 255, 255);
+    text-decoration: rgb(255, 255, 255);
+    text-decoration-line:underline;
+}
+
+
+.form {
+    text-align: center  ;
+       
+}
+
+.box {
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    background-color: #f8f8f8;
+    
+    position: relative;
+    border: 1px solid #e5e5e5 ;
+    transform: translate(-50%, -50%);
+    float: left;
+    bottom: 350px;
+    left : 0px;
+
+}
